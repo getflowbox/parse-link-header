@@ -84,7 +84,7 @@ const parseLinkHeader = (linkHeader): Links | null => {
   return linkHeader
     .split(/,\s*</)
     .map(parseLink)
-    .filter((x: Record<string, string>) => x?.rel)
+    .filter((x: Record<string, string>) => x && x.rel)
     .reduce(intoRels, {})
 }
 
