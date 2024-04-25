@@ -43,7 +43,7 @@ function parseLink(link: string) {
     const parts = m[2].split(';')
     const u = new URL(
       linkUrl,
-      typeof window !== 'undefined' ? window?.location?.href : undefined,
+      typeof location === 'object' && !!location ? location.href : undefined,
     )
 
     const qry = {}
