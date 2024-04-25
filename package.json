@@ -1,0 +1,30 @@
+{
+  "name": "@flowbox/parse-link-header",
+  "version": "1.0.0",
+  "description": "Parses a link header and returns paging information for each contained link.",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "packageManager": "yarn@4.1.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/getflowbox/parse-link-header.git"
+  },
+  "homepage": "https://github.com/getflowbox/parse-link-header",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier lib --write",
+    "test": "node --import tsx --test ./lib/index.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "prettier": "^3.2.5",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.5"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}
