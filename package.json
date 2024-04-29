@@ -4,6 +4,7 @@
   "description": "Parses a link header and returns paging information for each contained link.",
   "license": "MIT",
   "type": "module",
+  "files": ["lib"],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "packageManager": "yarn@4.1.1",
